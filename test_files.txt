@@ -1,0 +1,20 @@
+- Name: The UPS Store
+  Categories: Shipping Centers, Local Services, Notaries, Mailbox Centers, Printing Services
+- Name: Target
+  Categories: Department Stores, Shopping, Fashion, Home & Garden, Electronics, Furniture Stores
+- Name: St Honore Pastries
+  Categories: Restaurants, Food, Bubble Tea, Coffee & Tea, Bakeries
+- Name: Perkiomen Valley Brewery
+  Categories: Brewpubs, Breweries, Food
+- Name: Sonic Drive-In
+  Categories: Burgers, Fast Food, Sandwiches, Food, Ice Cream & Frozen Yogurt, Restaurants
+- Name: Famous Footwear
+  Categories: Sporting Goods, Fashion, Shoe Stores, Shopping, Sports Wear, Accessories
+- Name: Temple Beth-El
+  Categories: Synagogues, Religious Organizations
+- Name: Tsevi's Pub And Grill
+  Categories: Pubs, Restaurants, Italian, Bars, American (Traditional), Nightlife, Greek
+- Name: Sonic Drive-In
+  Categories: Ice Cream & Frozen Yogurt, Fast Food, Burgers, Restaurants, Food
+- Name: Marshalls
+  Categories: Department Stores, Shopping, Fashion
