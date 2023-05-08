@@ -63,8 +63,10 @@ def read_business_files(directory_path):
     return businesses
 
 
+#Used to choose the amount of files youd like in the cluster pool
+directory = "yelp_files/business/json"
+create_business_files(500, directory)
 
-#directory = "yelp_files/business/json"
-#create_business_files(100, directory)
+
 #businesses = read_business_files(directory)
 #print(businesses)

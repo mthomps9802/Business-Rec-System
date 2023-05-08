@@ -14,9 +14,13 @@ def clustersOutput(clusters, output_text):
         output_text.insert(tk.END, f'\nCluster {i+1}:\n')
         output_text.insert(tk.END, f'Medoid: {medoid.name}\n')
         output_text.insert(tk.END, 'Businesses:\n')
+        counter = 0
         for b in cluster:
             similarity_score = round(1 - get_cosine_similarity(b, medoid), 2)
-            output_text.insert(tk.END, f'\t- {b.name} ({b.business_id}) - Similarity Score: {similarity_score}\n')
+            output_text.insert(tk.END, f'\t- {b.name}  - Similarity Score: {similarity_score}\n')
+            counter +=1
+            if counter == 5:
+                break
         output_text.insert(tk.END, '\n')
 
 
@@ -55,6 +59,7 @@ class Gui:
 root= tk.Tk()
 gui = Gui(root)
 root.mainloop()
+
 #k = 5       
 #clusters = k_medoids(businesses, k)
 #clustersOutput(clusters)

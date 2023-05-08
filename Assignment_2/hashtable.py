@@ -9,10 +9,10 @@ MAX_RECORDS_PER_BLOCK = 10000
 HASH_FUNCTION = hashlib.sha256
 
 # Define the path to the Yelp businesses file
-BUSINESSES_FILE = "/Users/mxrksworld/Downloads/BusinessRec/yelp_files/business.json"
+BUSINESSES_FILE = "yelp_files/business.json"
 
 # Define the path to the hash table file
-HASH_TABLE_FILE = "/Users/mxrksworld/Downloads/BusinessRec/Assignment_2/hashtable.txt"
+HASH_TABLE_FILE = "Assignment_2/hashtable.txt"
 
 # Create an empty hash table file if it doesn't exist
 try:
@@ -44,7 +44,7 @@ class Block:
 
     def write_to_file(self):
         block_filename = f"block{self.block_num}.json"
-        block_path = f"/Users/mxrksworld/Downloads/BusinessRec/yelp_rec/blocks/{block_filename}"
+        block_path = f"yelp_rec/blocks/{block_filename}"
         with open(block_path, "w") as f:
             json.dump(self.records, f)
         hash_table[self.block_num] = block_filename
@@ -74,7 +74,7 @@ for business in businesses:
         if block_filename in buffer_cache:
             block = buffer_cache[block_filename]
         else:
-            block_path = f"/Users/mxrksworld/Downloads/BusinessRec/yelp_rec/blocks/{block_filename}"
+            block_path = f"yelp_rec/blocks/{block_filename}"
             
             with open(block_path, "r") as f:
                 block = Block(block_num)
